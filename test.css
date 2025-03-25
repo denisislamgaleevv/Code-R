@@ -110,7 +110,7 @@ nav a.btn {
   width: 50%; /* Задаем ширину для столбика с формой */
   text-align: center; /*
   padding: 20px; /* Отступы внутри формы */
-  background-image: linear-gradient(to right, #009c68, #b8d800);
+  background-image: linear-gradient(to right, #009c68, #ff7741);
   border-radius: 25px; /* Скругленные края формы */
 }
 .trial-form h2{
@@ -237,7 +237,7 @@ footer {
   font-weight: 800;
 }
 .card {
-  background-image: linear-gradient(to right, #009c68, #b8d800);
+  background-image: linear-gradient(to right, #009c68, #d83d00);
   border-radius: 20px;
   color: white;
   font-size: 15px;
@@ -560,7 +560,7 @@ width: 100%;
  
 .stats-header{
   margin-top: 20px;
-  background-image: linear-gradient(to right, #009c68, #b8d800);
+  background-image: linear-gradient(to right, #009c68, #ff7741);
   color: white;
   text-align: center;
   justify-content: center;
@@ -575,8 +575,8 @@ width: 100%;
   padding-top: 15px;
 }
 .stats-header h1{
-  padding: 20px;
-  font-size: 34px;
+  padding: 10px;
+  font-size: 40px;
 }
 .stats-header h2{
   padding: 20px;
