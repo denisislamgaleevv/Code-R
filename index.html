@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-R</title>
+    <link rel="icon" href="logo_mini.png" type="image/png">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+   
+
+    <link rel="stylesheet" href="test.css">
+ 
+</head>
+<body>
+    <img src = "logo.png" width="150px" class = 'logo_image_header'/> 
+    <header>
+   
+      <nav>
+        <ul>
+         
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Наши репетиторы</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Бесплатное занятие</a></li>
+          <li><a href="#" class="phone">+7 (999) 589-01-73</a></li>
+          <li><a href="#" class="btn">Записаться</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="trial-section">
+        <div class="trial-content">
+          <div class="trial-image">
+            <img src="main.jpg" alt="Пробное занятие">
+            <img src="main2.png" alt="Пробное занятие">
+          </div>
+          <div class="trial-form">
+            <div class="logo_container">
+            <img src = "logo.png" width="200px" class = 'logo_image'/>
+            </div>
+            <h2>Онлайн-шкoлa математики, физики и пpогpаммиpoвания Code-R</h2>
+            <div class="form-info">
+              <div class="info-item1">
+                <div class="info-box">
+                  <p>&nbsp;&nbsp;&nbsp;Первое занятие бесплатно&nbsp;&nbsp;&nbsp;</p>
+                </div>
+              </div>
+              <div class="info-item2">
+                <div class="info-box">
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;От 800 ₽ / 60 минут&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </div>
+              </div>
+              <div class="info-item3">
+                <div class="info-box">
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;По всем предметам&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </div>
+              </div>
+            </div>
+            <form id = 'contact_us'  onsubmit='sendData(event)'>
+              <div class="form-group">
+                <input type="text" id="name_input" name="name" placeholder="Имя" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" id="phone_input" name="phone"  placeholder="Телефон" required>
+              </div>
+              <button type="submit" class="btn">Записаться</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+      <!-- <section class="trial-section">
+        <div class="our_tutors" id="our_tutors">
+          <div class='tutors_header'> 
+            <h1>Наша команда</h1>
+          </div>
+          <div class="tutors_desc"> 
+            <div class="left_card_container">
+              <div class="card left-card">
+                <div class = 'card_text_container'> 
+                <h1>≈ 93 балла</h1>
+                <h2>Результат ЕГЭ наших<br>репетиторов</h2>
+              </div>
+              </div>
+              <div class="card left-card">
+                <div class = 'card_text_container'> 
+                <h2>опыт преподавания от</h2>
+                <h1>2-х лет</h1>
+              </div>
+              </div>
+            </div>
+            <img src="test.png" class="tutor-image" alt="Наставник">
+            <div class="right_card_container">
+              <div class="card right-card">
+                <div class = 'card_text_container'> 
+                <h1>Вадим</h1>
+                <h3>Математика, информатика и программирование</h3>
+              </div>
+  
+              </div>
+              <div class="card right-card">
+                <div class = 'card_text_container'> 
+                <h2>Подготовил три поколения выпускников ЕГЭ, которые успешно поступили в топовые вузы</h2>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    <section class = 'my_slider' >
+    <div class="blog-slider_wrapper">    
+        <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+                <!-- Карточка -->
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="tutors/vadim.jpg" alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__date">Программирование, математика и информатика</span>
+                        <div class="blog-slider__title">Вадим</div>
+                     
+                        <p><li>Окончил УГАТУ с красным дипломом</li></p>
+                        <p><li>Подготовил 3 поколения выпускников, поступивших в лучшие ВУЗы страны</li></p>
+                        <p><li>Разработчик геологических проектов на python и C++</li></p>
+                 
+                        <div class="blog-slider__button-wrapper">
+                            <a href="#" class="blog-slider__button">Записаться</a>
+                        </div>
+                    </div>
+                </div>    
+               <!-- Карточка -->
+               <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                    <img src="tutors/kate.png" alt="">
+                </div>
+                <div class="blog-slider__content">
+                    <span class="blog-slider__date">Физика и математика</span>
+                    <div class="blog-slider__title">Екатерина</div>
+                    <p><li>Сдала математику на 94 балла</li></p>
+                    <p><li>Окончила УУНИТ с красным дипломом</li></p>
+                    <p><li>Опыт преподавания 4 года, обучает детей с 3 по 11 классы</li></p>
+             
+                    <div class="blog-slider__button-wrapper">
+                        <a href="#" class="blog-slider__button">Записаться</a>
+                    </div>
+                </div>
+            </div>    
+             <!-- Карточка -->
+             <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                    <img src="tutors/denis.jpg" alt="">
+                </div>
+                <div class="blog-slider__content">
+                    <span class="blog-slider__date">Программирование, математика и информатика</span>
+                    <div class="blog-slider__title">Денис</div>
+                    <p><li>Высшее образование в области математики и программирования</li></p>
+                    <p><li>Опыт преподавания 5 лет, средний балл учеников за ЕГЭ - 80</li></p>
+                    <p><li>Составляет методические материалы и принимает участие в научных конференциях</li></p>
+             
+                    <div class="blog-slider__button-wrapper">
+                        <a href="#" class="blog-slider__button">Записаться</a>
+                    </div>
+                </div>
+            </div>    
+            <!-- Карточка -->
+            <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                    <img src="tutors/timur.png" alt="Тимур">
+                </div>
+                <div class="blog-slider__content">
+                    <span class="blog-slider__date">Математика</span>
+                    <div class="blog-slider__title">Тимур</div>
+                    <p><li>Сдал ЕГЭ по математике на 94 балла</li></p>
+                    <p><li>Опыт преподавания 2 года, средний балл учеников за ЕГЭ - 80</li></p>
+                    <p><li>Составляет методические материалы</li></p>
+             
+                    <div class="blog-slider__button-wrapper">
+                        <a href="#" class="blog-slider__button">Записаться</a>
+                    </div>
+                </div>
+            </div>    
+            </div>
+            
+            <div class="blog-slider__pagination"></div>
+        </div>
+    </div>
+    </section>
+    <section class="reviews-section">
+      <div class="decorative-box box-1"></div>
+      <div class="decorative-box box-2"></div>
+      <div class="decorative-box box-3"></div>
+      
+      <div class="content-wrapper">
+        
+          
+         
+          <div class="main-container">
+        
+            <section class="reviews-section">
+              <div class = "stats"> 
+              <div class = "stats-header">
+                <img src = 'logo.png' width="300px"/>
+                <h1>Ученики нас любят!</h1>
+                <h2>Скорее записывайся!</h2>
+                <button class="btn-free">Попробовать бесплатно</button>
+              </div>
+                <div class="stats-sidebar">
+                    <div class="stat-box">
+                        <div class="stat-value">4.5</div>
+                        <div class="stat-label">средняя оценка учеников</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value">80+</div>
+                        <div class="stat-label">средний балл ЕГЭ учеников</div>
+                    </div>
+                </div>
+              </div>
+                <div class="reviews-carousel">
+                    <div class="carousel-container" id="carousel">
+                        <div class="review">
+                          <img src="test.png"/>
+                            <!-- <div class="review-header">
+                                <div class="review-name">Анастасия</div>
+                                <div class="review-subject">Английский язык</div>
+                            </div>
+                            <p class="review-text">Прекрасный педагог. Готовится к каждому занятию, подготавливает материалы которые необходимы! Использует хорошие техники для запоминания. Мои огромные рекомендации!</p>
+                        </div> -->
+                      </div>
+                        <div class="review">
+                          <img src="test.png"/>
+                            <!-- <div class="review-header">
+                                <div class="review-name">Дарья</div>
+                                <div class="review-subject">Английский язык - ЕГЭ по английскому языку</div>
+                            </div>
+                            <p class="review-text">Хороший преподаватель, который не давит, а располагает к себе приятной и легкой атмосферой. Помогает усваивать материал, который раньше тяжело давался. Учится приятно и не скучно! Большое спасибо</p>
+                            <span class="review-score">(≥75)</span> -->
+                        </div>
+                        
+                        <div class="review">
+                          <img src="test.png"/>
+                            <!-- <div class="review-header">
+                                <div class="review-name">Иван</div>
+                                <div class="review-subject">Математика</div>
+                            </div>
+                            <p class="review-text">Отличный преподаватель! Объясняет сложные темы простым языком. Благодаря занятиям смог улучшить свои результаты на 30%.</p>
+                            <span class="review-score">(≥85)</span> -->
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-nav">
+                        <div class="nav-dot active" data-index="0"></div>
+                        <div class="nav-dot" data-index="1"></div>
+                        <div class="nav-dot" data-index="2"></div>
+                    </div>
+                </div>
+            </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="my_slider.js" defer></script>
+    <script src="script.js" defer></script> 
+</body>
+ 
+</html>
